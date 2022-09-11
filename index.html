@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disposable Income Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="disposablePersonalIncomeRadio" name="variables" checked>
+  <label for="disposablePersonalIncomeRadio">Disposable Personal Income</label>
+
+  <input type="radio" id="personalincomeRadio" name="variables">
+  <label for="personalincomeRadio">Personal income</label>
+
+  <input type="radio" id="governmenttaxesRadio" name="variables">
+  <label for="governmenttaxesRadio">Government taxes</label>
+
+  <input type="radio" id="governmenttransfersRadio" name="variables">
+  <label for="governmenttransfersRadio">Government transfers</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Asset Value</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Government taxes</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Government transfers</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
